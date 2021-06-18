@@ -1,0 +1,44 @@
+<View controllerName="sampleemail.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page">
+					<content>
+						<IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter text="Info" key="info">
+									<VBox>
+										<Text text="Info content goes here ..." />
+										<Button text="Send Email" press="onSendMail">
+										</Button>
+									</VBox>
+								</IconTabFilter>
+								<IconTabFilter text="Attachments" key="attachments">
+									<VBox>
+										<Text text="Attachments go here ..." />
+										<Button text="Send Email" press="onSendMail">
+										</Button>
+									</VBox>
+								</IconTabFilter>
+								<IconTabFilter text="Notes" key="notes">
+									<VBox>
+										<Text text="Notes go here ..." />
+										<Button text="Send Email" press="onSendMail">
+										</Button>
+									</VBox>
+								</IconTabFilter>
+								<IconTabFilter text="People" key="people">
+									<VBox>
+										<Text text="People content goes here ..." />
+										<Button text="Send Email" press="onSendMail">
+										</Button>
+									</VBox>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</View>
